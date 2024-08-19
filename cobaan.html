@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: whitesmoke;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+            border-bottom: 1px solid black; /* Untuk lebih terlihat */
+        }
+
+        .navbar {
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            font-size: 17px;
+            font-family: Poppins, sans-serif;
+            cursor: pointer;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .content {
+            height: 1500px; /* Menambah konten untuk scrolling */
+            padding: 20px;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" class="navbar">Home</a>
+        <a href="#" class="navbar">About</a>
+        <a href="#" class="navbar">Services</a>
+        <a href="#" class="navbar">Contact</a>
+    </div>
+
+    <div class="content">
+        <!-- Tambahkan konten untuk uji scrolling -->
+        <p>Scroll down to see the sticky effect.</p>
+    </div>
+
+</body>
+</html>
